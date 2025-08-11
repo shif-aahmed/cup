@@ -107,9 +107,12 @@ input {
 
 
 /* logo nav */
-.logo img{
+.logo img,footer img{
     width: 200px;
     height: 100px;
 }
-
+.widget-head{
+  margin-bottom: 50px;
+  margin-top: 0;
+}
 /* about */
