@@ -448,35 +448,35 @@
             </div>
         </section>
 
-<!-- Cta Section Start -->
-<section class="cta-section section-padding pt-0">
-    <div class="container">
-        <div class="cta-wrapper">
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <div class="cta-left">
-                        <h2><span class="count">25</span></h2>
-                        <p>Years of Experience</p>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="cta-right">
-                        <div class="shape-image">
-                        </div>
-                        <div class="cta-content">
-                            <!-- <span>Where Every Sip Tells a Story worldwide.</span> -->
-                            <h3>Where Every Sip Tells <br> a Story worldwide.</h3>
-                        </div>
-                        <div class="call-area">
-                            <p>Call us for free</p>
-                            <a href="tel:+19993452577">+85294659934</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Countdown Component -->
+<section class="countdown-section">
+  <div class="container">
+    <div class="countdown-wrapper">
+      <div class="cta-left text-center">
+        <div class="countdown">
+          <div>
+            <span id="days" class="time-box">00</span>
+            <span class="label">Days</span>
+          </div>
+          <div>
+            <span id="hours" class="time-box">00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div>
+            <span id="minutes" class="time-box">00</span>
+            <span class="label">Min</span>
+          </div>
+          <div>
+            <span id="seconds" class="time-box">00</span>
+            <span class="label">Sec</span>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
+
+
 
 <!-- About Section Start -->
 <section class="about-section section-padding pt-0 fix">
@@ -822,6 +822,37 @@
     document.querySelector('.modal-content').addEventListener('click', e => {
         e.stopPropagation();
     });
+   
+const countdownDate = new Date("October 13, 2025 00:00:00").getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = countdownDate - now;
+
+  if (distance < 0) {
+    document.querySelector(".countdown").innerHTML = "<span>00</span> Days";
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("days").textContent = days.toString().padStart(2, '0');
+  document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+  document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+  document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
+
+</script>
+
+
+
 </script>
 
     </body>
