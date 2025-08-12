@@ -423,11 +423,26 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
         </div>
 
         <!-- Hero Section Start -->
-        <section class="hero-section hero-1">
-            <div class="array-button">
-                <button class="array-prev"><i class="fal fa-arrow-right"></i></button>
-                <button class="array-next"><i class="fal fa-arrow-left"></i></button>
-            </div>
+ <section class="hero-section hero-1">
+    <div class="array-button">
+        <button 
+            class="array-prev" 
+            style="background: linear-gradient(135deg, #000000, #9d0dad);"
+            onmouseover="this.style.background='linear-gradient(135deg, #9d0dad, #000000)'" 
+            onmouseout="this.style.background='linear-gradient(135deg, #000000, #9d0dad)'">
+            <i class="fal fa-arrow-right"></i>
+        </button>
+
+        <button 
+            class="array-next" 
+            style="background: linear-gradient(135deg, #000000, #9d0dad);"
+            onmouseover="this.style.background='linear-gradient(135deg, #9d0dad, #000000)'" 
+            onmouseout="this.style.background='linear-gradient(135deg, #000000, #9d0dad)'">
+            <i class="fal fa-arrow-left"></i>
+        </button>
+    </div>
+
+
             <div class="swiper hero-slider" height="200px">
                 <div class="swiper-wrapper" height="200px">
                     <div class="swiper-slide" height="200px">

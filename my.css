@@ -43,7 +43,9 @@ body {
   display: flex;
 }
 
-/* Modal Box */
+.theme-btn{
+  background: linear-gradient(135deg, #000000, #9d0dad); 
+}
 
 /* Modal Overlay */
 .modal-overlay {
