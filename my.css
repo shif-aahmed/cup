@@ -310,6 +310,9 @@ input {
   align-items: center; /* center horizontally */
   text-align: center; /* ensure text centers */
   gap: 8px; /* space between lines */
+  margin-top: 1
+  
+  0rem !important;
 }
 
 .section-title span {
