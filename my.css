@@ -46,7 +46,12 @@ body {
 .theme-btn{
   background: linear-gradient(135deg, #000000, #9d0dad); 
 }
-
+.fa-arrow-right,.fa-arrow-right{
+  color: white;
+}
+.fa-arrow-right:hover,.fa-arrow-right:hover{
+  color: white;
+}
 /* Modal Overlay */
 .modal-overlay {
   display: none;
@@ -516,3 +521,15 @@ body {
   opacity: 0.8;
   color: white;
 }
+/* .sidebar__toggle{
+    color: #040404 !important;
+} */
+ .header__hamburger{
+  color: rgb(0, 0, 0);
+ }
+ .offcanvas__logo{
+  color: rgb(0, 0, 0);
+ }
+ .fa-check-circle,.flaticon-travel-agency{
+  color: rgb(121, 0, 117) !important;
+ }
