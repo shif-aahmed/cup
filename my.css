@@ -348,9 +348,9 @@ input {
   align-items: center; /* center horizontally */
   text-align: center; /* ensure text centers */
   gap: 8px; /* space between lines */
-  margin-top: 1
+  margin-top: 10rem !important;
   
-  0rem !important;
+
 }
 
 .section-title span {
@@ -569,7 +569,7 @@ body {
 .contact-container {
   max-width: 900px;
   margin: auto;
-  background: #000000;
+  background: #202020;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
