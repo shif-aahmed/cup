@@ -23,8 +23,12 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  color: black;
 }
-
+.modal-content input {
+  color: #000; /* Black text for visibility */
+  background-color: #fff; /* White background so text stands out */
+}
 .wow{
   color: #ccc;
 }
@@ -57,6 +61,32 @@ body {
 
 .modal-overlay.active {
   display: flex;
+}
+.requirements {
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+.requirements div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.requirements span {
+  color: #888;
+}
+.requirements .valid span {
+  color: #22c55e; /* green */
+}
+.requirements .invalid span {
+  color: #888; /* gray */
+}
+.requirements .valid::before {
+  content: "✔";
+  color: #22c55e;
+}
+.requirements .invalid::before {
+  content: "✖";
+  color: #888;
 }
 
 /* Modal Box */
