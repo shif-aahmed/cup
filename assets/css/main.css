@@ -736,9 +736,9 @@ input.main-search-input::placeholder {
   background-color: var(--bg);
 }
 
-.section-padding {
-  padding: 120px 0;
-}
+/* .section-padding { */
+  /* padding: 120px 0; */
+/* } */
 
 @media (max-width: 1199px) {
   .section-padding {
