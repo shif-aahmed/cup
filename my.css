@@ -28,7 +28,13 @@ body {
 .wow{
   color: #ccc;
 }
+.section-title span{
+  color:#970085 !important;
 
+}
+.about-list{
+  margin-left: 100px !important;
+}
 .modal-overlay.active {
   display: flex;
 }
@@ -137,8 +143,8 @@ input {
 }
 
 .servie-card-image-items {
-  border-radius: 10%;
-  overflow: hidden;                    /* ensures rounded corners clip the image */
+  overflow: hidden;
+  border-radius: 10%;                    /* ensures rounded corners clip the image */
   background-size: cover;              /* important: image covers the div */
   background-position: center center;
   background-repeat: no-repeat;
