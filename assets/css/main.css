@@ -12,7 +12,7 @@ Version: 1.0.0
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #fd547d;
+  --theme: #561260;
   --theme2: #D12525;
   --theme3: #FFB936;
   --header: #2a2833;
@@ -1453,11 +1453,11 @@ input.main-search-input::placeholder {
 }
 
 .header-main .main-menu ul li:hover > a {
-  color: var(--theme);
+  color: black;
 }
 
 .header-main .main-menu ul li:hover > a::after {
-  color: var(--theme);
+  color: black;
 }
 
 .header-main .main-menu ul li:hover > .submenu {
@@ -1465,6 +1465,7 @@ input.main-search-input::placeholder {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+  color: #000;
 }
 
 .header-1 {
