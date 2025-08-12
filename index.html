@@ -300,18 +300,7 @@
                                                 <li><a href="404.html">404 Page</a></li>
                                             </ul>
                                         </li>
-                                        <li class="has-dropdown">
-                                            <a href="shop.html">
-                                                 Shop
-                                                 <i class="fas fa-angle-down"></i>
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-details.html">Shop Single</a></li>
-                                                
-                                                <li><a href="checkout.html">checkout</a></li>
-                                            </ul>
-                                        </li>
+                                        
                                         <li>
                                             <a href="contact.html">Contact</a>
                                         </li>
@@ -354,23 +343,42 @@
       </div>
 
       <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-        
-        <!-- Password Requirements -->
-        <div id="passwordRequirements" class="requirements">
-          <div id="req-length" class="invalid"><span>At least 8 characters</span></div>
-          <div id="req-uppercase" class="invalid"><span>One uppercase letter</span></div>
-          <div id="req-lowercase" class="invalid"><span>One lowercase letter</span></div>
-          <div id="req-number" class="invalid"><span>One number</span></div>
-          <div id="req-special" class="invalid"><span>One special character</span></div>
+        <label for="mobile">Mobile Number <span style="font-weight: normal;">(Optional)</span></label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number">
+      </div>
+
+      <div class="form-group">
+        <label for="device">Preferred Device</label>
+        <select id="device" name="device" required>
+          <option value="">Select a device</option>
+          <option value="mobile">Mobile</option>
+          <option value="tablet">Tablet</option>
+          <option value="laptop">Laptop</option>
+          <option value="smart-tv">Smart TV</option>
+          <option value="desktop">Desktop</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Genres You Enjoy</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="genres" value="drama"> Drama</label>
+          <label><input type="checkbox" name="genres" value="thriller"> Thriller</label>
+          <label><input type="checkbox" name="genres" value="comedy"> Comedy</label>
+          
+          <label><input type="checkbox" name="genres" value="other"> Other</label>
         </div>
+      </div>
+
+      <div class="form-group">
+        <label><input type="checkbox" name="updates" value="yes"> Keep me in the loop with exclusive updates and access.</label>
       </div>
 
       <button type="submit" class="submit-btn">Register</button>
     </form>
   </div>
 </div>
+
 
 <script>
 const passwordInput = document.getElementById('password');
@@ -576,10 +584,7 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
                             </li>
                         </ul>
                         <div class="about-author">
-                            <div class="author-image wow fadeInUp" data-wow-delay=".3s">
-                                <img src="assets/img/images/image4.jpg" alt="author-img" style="width: 62px;height: 62px;">
-                                <!-- <img src="assets/img/about/signature.png" alt="signature"> -->
-                            </div>
+                        
                             <div class="about-button wow fadeInUp" data-wow-delay=".5s">
                                 <a href="about.html" class="theme-btn">
                                     Discover More
@@ -731,10 +736,12 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
                         </div>
                         <div class="footer-content">
                             <p>
-                                support@cupentertainment.com
+                                Cup Entertainment Global Limited 
                             </p>
-                            <h6><a href="tel:+15551234567">+852 9465 9934</a></h6>
-                            <h6><a href="tel:+85294659934">123 Entertainment St, LA, CA</a></h6>
+                            <h6><a href="tel:+852 9465 9934">+852 9465 9934</a></h6>
+                            <h6><a href="tel:+97155290862">+97155290862</a></h6>
+                            <h6><a href="Support@cupentertainment.com">Support@cupentertainment.com</a></h6>
+                            <h6><a href="tel:+85294659934">Rm 1203, 12/F, TOWER 3 CHINA HONG KONG CITY, 33 CANTON RD TSIM SHA TSUI HONG KONG</a></h6>
                             <div class="social-icon d-flex align-items-center">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>

@@ -23,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overflow: auto;
   color: black;
 }
 .modal-content input {
@@ -183,7 +184,7 @@ input {
   overflow: hidden;
   border-radius: 10%;                    /* ensures rounded corners clip the image */
   background-size: cover;              /* important: image covers the div */
-  background-position: center center;
+  background-position: top;
   background-repeat: no-repeat;
   width: 100%;
   display: block;
@@ -223,7 +224,7 @@ input {
 .servie-card-image-items.bg-cover,
 .servie-card-image-items {
   background-size: cover !important;
-  background-position: center !important;
+  background-position: top !important;
 }
 
 /* Team Section Image Styling */
