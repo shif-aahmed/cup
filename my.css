@@ -445,8 +445,8 @@ body {
 }
 
 .cta-left {
-  background: linear-gradient(135deg, #0c0c0c, #12051c);
-  padding: 25px;
+  background: linear-gradient(135deg, #181818, #4e024f);
+  padding: 40px !important;
   border-radius: 12px;
   color: white;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
@@ -459,6 +459,7 @@ body {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 0;
 }
 
 .time-box {
@@ -469,11 +470,14 @@ body {
   font-weight: bold;
   min-width: 70px;
   text-align: center;
+    color: rgba(255, 255, 255, 0.571);
+
 }
 
 .label {
   font-size: 0.9rem;
   display: block;
-  margin-top: 5px;
+  margin-top: 20px !important;
   opacity: 0.8;
+  color: white;
 }
